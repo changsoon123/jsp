@@ -1,5 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    
+    <%
+    String user_id = (String)session.getAttribute("user_id");
+    String user_nick = (String)session.getAttribute("user_nick");
+    out.print(user_nick + "님이 접속중입니다.");
+    %>
+    
 <!DOCTYPE html>
 <html>
 <head>
